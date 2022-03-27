@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction using linear regression</title>
+</head>
+<body>
+
+    <div class = login>
+        <h1>Predict fuel price </h1>
+        <h2>enter the following details to predict the fuel price</h2>
+        <form action="/predict" method="post">
+            <input type="text" name="kms" placeholder="kilometer driven" required="required"/>
+            <button type="submit" class="btn">Predict</button>
+        </form>
+        <br>
+        <br>
+        {{prediction_text}}
+    </div>
+
+</body>
+</html>
